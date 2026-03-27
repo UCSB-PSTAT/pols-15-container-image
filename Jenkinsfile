@@ -39,7 +39,7 @@ pipeline {
                         sh 'podman run -it --rm localhost/$IMAGE_NAME R -e "library(\"datasets\")"'
                         sh 'podman run -it --rm localhost/$IMAGE_NAME R -e "library(\"faraway\")"'
                         sh 'podman run -it --rm localhost/$IMAGE_NAME R -e "library(\"foreign\")"'
-                        sh 'podman run -it --rm localhost/$IMAGE_NAME R -e "library(\"ggplot\")"'
+                        sh 'podman run -it --rm localhost/$IMAGE_NAME R -e "library(\"ggplot2\")"'
                         sh 'podman run -it --rm localhost/$IMAGE_NAME R -e "library(\"knitr\")"'
                         sh 'podman run -it --rm localhost/$IMAGE_NAME R -e "library(\"MASS\")"'
                         sh 'podman run -it --rm localhost/$IMAGE_NAME R -e "library(\"pscl\")"'
